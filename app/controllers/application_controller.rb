@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
 
-  # def blank_square_form
+  def home_form
 
-  #   render ({:template => "calculation_templates/square_form.html.erb"})
-  # end
+    render ({:template => "layouts/application.html.erb"})
+  end
 
   # def calculate_square
   #   #params = "elephant"=>"42"
