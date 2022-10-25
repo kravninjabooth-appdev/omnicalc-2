@@ -1,13 +1,9 @@
 class ApplicationController < ActionController::Base
 
-  def home_form
-
-    render ({:template => "layouts/application.html.erb"})
-  end
 
   def add
 
-    render ({:template => "layouts/add.html.erb"})
+    render ({:template => "calculation_templates/add.html.erb"})
   end
 
   # def add_form
