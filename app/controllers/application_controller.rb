@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
   
       @num_one = params.fetch("multiplyone").to_f
       @num_two = params.fetch("multiplytwo").to_f
-      @sum = @num_one * @num_two
+      @result = @num_one * @num_two
     render ({:template => "calculation_templates/calculate_mul.html.erb"})
   end
 
