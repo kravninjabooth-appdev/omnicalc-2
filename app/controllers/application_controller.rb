@@ -8,9 +8,9 @@ class ApplicationController < ActionController::Base
 
   def calculate_addition
   
-      @num_one = params.fetch("input_one").to_f
-      @num_two = params.fetch("input_two").to_f
-      @sum = @numone + @numtwo
+      @num_one = params.fetch("addone").to_f
+      @num_two = params.fetch("addtwo").to_f
+      @sum = @num_one + @num_two
     render ({:template => "calculation_templates/calculate_addition.html.erb"})
   end
 
