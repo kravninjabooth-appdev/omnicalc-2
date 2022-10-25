@@ -15,4 +15,17 @@ class ApplicationController < ActionController::Base
   end
 
 
+  def subtract
+
+    render ({:template => "calculation_templates/sub.html.erb"})
+  end
+
+  def calculate_sub
+  
+      @num_one = params.fetch("subtractone").to_f
+      @num_two = params.fetch("subtracttwo").to_f
+      @sum = @num_two + @num_one
+    render ({:template => "calculation_templates/calculate_sub.html.erb"})
+  end
+
 end
