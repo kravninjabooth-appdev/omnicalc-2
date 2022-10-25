@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get("/", {:controller => "application", :action => "home_form"})
   
-  # get("/add", {:controller => "application", :action => "add_form"})
+  get("/add", {:controller => "application", :action => "add"})
 
   # get("/wizard_add", {:controller => "application", :action => "calculate_addition"})
 

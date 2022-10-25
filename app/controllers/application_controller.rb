@@ -5,7 +5,12 @@ class ApplicationController < ActionController::Base
     render ({:template => "layouts/application.html.erb"})
   end
 
-  # def calculate_square
+  def add
+
+    render ({:template => "layouts/add.html.erb"})
+  end
+
+  # def add_form
   #   #params = "elephant"=>"42"
 
   #     @num = params.fetch("elephant").to_f
