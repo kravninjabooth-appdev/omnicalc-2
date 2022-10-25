@@ -12,11 +12,11 @@ Rails.application.routes.draw do
 
   get("/wizard_sub", {:controller => "application", :action => "calculate_sub"})
 
-  # get("/multiply", {:controller => "application", :action => "multiply_form"})
+  get("/multiply", {:controller => "application", :action => "multiply"})
 
-  # get("/wizard_multiply", {:controller => "application", :action => "calculate_mul"})
+  get("/wizard_multiply", {:controller => "application", :action => "calculate_mul"})
 
-  # get("/divide", {:controller => "application", :action => "divide_form"})
+  # get("/divide", {:controller => "application", :action => "divide"})
 
   # get("/wizard_divide", {:controller => "application", :action => "calculate_div"})
 

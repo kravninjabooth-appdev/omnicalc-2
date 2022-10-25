@@ -28,4 +28,18 @@ class ApplicationController < ActionController::Base
     render ({:template => "calculation_templates/calculate_sub.html.erb"})
   end
 
+  def multiply
+
+    render ({:template => "calculation_templates/multiply.html.erb"})
+  end
+
+  def calculate_mul
+  
+      @num_one = params.fetch("multiplyone").to_f
+      @num_two = params.fetch("multiplytwo").to_f
+      @sum = @num_one * @num_two
+    render ({:template => "calculation_templates/calculate_mul.html.erb"})
+  end
+
+
 end
